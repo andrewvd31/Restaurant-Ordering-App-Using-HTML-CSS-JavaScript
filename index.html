@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Smythe:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Andrew's Diner</h1>
+            <p>The best burgers and pizzas in town</p>
+        </header>
+        <main>
+            <section id="food-section"> 
+            </section>
+            <section id="order-id">
+                <p class="orders-para">Your orders</p>
+                <button class="refresh-btn">Refresh</button>
+                <div class="order-completion-modal" id="order-completion-modal">
+                </div>
+                <div class="order-list-total" id="order-list-total">
+                    <p>Total Price:</p>
+                    <p id="total-price"></p>
+                </div>
+                <button class="red-color" id="red-color">Clear Requests</button>
+                <button id="complete-order" class="complete-order">Complete Order</button>
+            </section>
+            <section class="payment-details-modal">
+                <button class="close-modal">X</button>
+                <p>Enter your card details</p>
+                <input type="text" placeholder="Enter your name" maxlength="25" required>
+                <input type="password" placeholder="Enter your card number" maxlength="16" required>
+                <input type="password" placeholder="Enter CVV" maxlength="3" required>
+                <button class="pay-finish">Pay</button>
+            </section>
+        </main>
+        <footer>
+            <p>Made With ❤️ @ Techie Andrew</p>
+        </footer>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
